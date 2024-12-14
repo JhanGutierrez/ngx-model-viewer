@@ -1,0 +1,13 @@
+<div [ngStyle]="{'width':'100%', height:'100vh', background:'black'}">
+
+  <button (click)="toggleWireframe()">
+    Wireframe
+  </button>
+  <button (click)="toggleGrid()">
+    Grid
+  </button>
+  <button (click)="toggleAutoRotate()">
+    Autorotate
+  </button>
+  <ngx-model-viewer modelPath="/baseModel.glb" [initConfig]="config" #gltfViewer />
+</div>
